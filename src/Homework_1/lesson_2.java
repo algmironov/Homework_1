@@ -37,13 +37,13 @@ public class lesson_2 {
         int bananaWeight = 80;
         int overallBananas = 5;
         int milkVolume = 100;
-        int milkWeight = 105;
-        int milkPortion = 200;
+        int milk100mlWeight = 105;
+        int milkPortionMl = 200;
         int icecreamWeight = 100;
         int overallIcecreams = 2;
         int eggWeight = 70;
         int overallEggs = 4;
-        int breakfastWeight = (bananaWeight * overallBananas) + ((milkPortion / milkVolume) * milkWeight) + (icecreamWeight * overallIcecreams) + (eggWeight * overallEggs);
+        int breakfastWeight = (bananaWeight * overallBananas) + ((milkPortionMl / milkVolume) * milk100mlWeight) + (icecreamWeight * overallIcecreams) + (eggWeight * overallEggs);
         float breakfastWeightKilo = breakfastWeight / 1000f;
         System.out.println(breakfastWeightKilo + " кг");
 
@@ -85,6 +85,35 @@ public class lesson_2 {
         System.out.println("Маша теперь получает " +  increasedSalaryMasha + " рублей. Годовой доход вырос на " + incomeDifferenceMasha + " рублей");
         System.out.println("Денис теперь получает " +  increasedSalaryDenis + " рублей. Годовой доход вырос на " + incomeDifferenceDenis + " рублей");
         System.out.println("Кристина теперь получает " +  increasedSalaryKristina + " рублей. Годовой доход вырос на " + incomeDifferenceKristina + " рублей");
+
+        //Задача 6
+        //переменные a,b,c,d,e уже использованы в коде, поэтому в качестве переменных использовал другие символы.
+        int k = 12;
+        int l = 27;
+        int m = 44;
+        int n = 15;
+        int o = 9;
+        int result = k * (l + (m - n * o));
+        System.out.println(result);
+        result = result * (-1);
+        System.out.println(result);
+
+        //Задача 7
+
+        int p = 5;
+        int r = 7;
+        p = p ^ r ^ (r = p);
+        System.out.println(p);
+        System.out.println(r);
+
+        //Задача 8
+
+        int s = 265;
+        s = s % 100;
+        int t = s / 10;
+        System.out.println("b = " + t);
+
+
 
 
     }
